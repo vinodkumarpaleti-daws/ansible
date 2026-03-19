@@ -1,0 +1,10 @@
+- name: vars_files level variables
+  hosts: local
+  connection: local
+  become: yes
+  vars_files:
+    - details.yaml  # It will call the variables from this files
+  tasks:
+    - name: print the variables
+      ansible.builtin.debug:
+        msg: "You Name is: {{ FIRST_NAME }} {{ LAST_NAME }}, your DOB: {{ DOB }}"

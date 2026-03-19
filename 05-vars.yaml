@@ -11,4 +11,4 @@
       vars:
         FIRST_NAME: "Kumar"   # Here task level variables will override the playlevel variables. It will print 'Kumar' insted of 'Vinodkumar'
       ansible.builtin.debug:
-        msg: "You Name is: {{ FIRST_NAME }} {{ LAST_NAME }}, your DOB: {{ DOB }}"
+        msg: "Your Name is: {{ FIRST_NAME }} {{ LAST_NAME }}, your DOB: {{ DOB }}"
