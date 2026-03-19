@@ -1,0 +1,7 @@
+- name: argument level variables
+  hosts: local
+  connection: local
+  tasks:
+    - name: print variables
+      ansible.builtin.debug:
+        msg: "Course is: {{ COURSE }}"  # Here we should pass the variable on the CLI as an argument during running the playbook
