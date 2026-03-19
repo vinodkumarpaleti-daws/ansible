@@ -1,0 +1,41 @@
+<!--- Students Information -->
+<Students>
+    <Student>
+        <Name> Vinod Kumar </Name>
+        <DOB> 1st Jan 1992 </DOB>
+        <Email> vinod@gmail.com </Email>
+        <Address>
+            <TemporaryAddress>
+                <H.no>1-44</H.no>
+                <Area>ECIL</Area>
+                <RoadNo> Road No: 3</RoadNo>
+                <City>Hyderabad</City>
+            </TemporaryAddress>
+            <PermamentAddress>
+                <H.no>1-44</H.no>
+                <Area>Ongole</Area>
+                <RoadNo> Road No: 3</RoadNo>
+                <City>Ongole</City>
+            </PermamentAddress>
+        </Address>
+    </Student>
+    <Student>
+        <Name> Raj </Name>
+        <DOB> 1st Jan 1993 </DOB>
+        <Email> raj@gmail.com </Email>
+        <Address>
+            <TemporaryAddress>
+                <H.no>1-44</H.no>
+                <Area>Gandhi Nagar</Area>
+                <RoadNo> Road No: 10</RoadNo>
+                <City>Delhi</City>
+            </TemporaryAddress>
+            <PermamentAddress>
+                <H.no>10</H.no>
+                <Area>Pune</Area>
+                <RoadNo> Road No: 5</RoadNo>
+                <City>Pune</City>
+            </PermamentAddress>
+        </Address>
+    </Student>
+</Students>

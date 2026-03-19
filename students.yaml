@@ -1,0 +1,32 @@
+---
+# Students Information
+- name: "Vinod Kumar"
+  DOB: 01-06-1992
+  Email: vinod@gmail.com
+  Address:
+  - type: Permanent
+    H.no: 1-44
+    Area: "Gandhi Nagar"
+    StreetNo: 3
+    City: Hyderabad
+  - type: Temporary
+    H.no: 10
+    Area: "Santhi Nagar"
+    StreetNo: 5
+    City: Delhi
+
+- name: "Kumar"
+  DOB: 01-06-1993
+  Email: kumar@gmail.com
+  Address:
+    - type: Permanent
+      H.no: 1
+      Area: "Netaji Nagar"
+      StreetNo: 8
+      City: Hyderabad
+    - type: Temporary
+      H.no: 2
+      Area: "RL Nagar"
+      StreetNo: 5
+      City: Delhi
+

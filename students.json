@@ -1,0 +1,40 @@
+{
+  "Students" : [
+    {
+      "First Name": "Vinod",
+      "DOB": "01-06-1992",
+      "Email": "vinod@gmail.com",
+      "Addresses": [
+        {
+          "Type": "Permanent",
+          "flatNumber": 144,
+          "Area": "Gandhi Nagar",
+          "Street": "Road No: 3"
+        }
+      ],
+      "Skills": [
+        "Azure",
+        "AWS",
+        "DevOps"
+      ]
+    },
+    {
+      "First Name": "Kumar",
+      "DOB": "01-06-1991",
+      "Email": "kumar@gmail.com",
+      "Addresses": [
+        {
+          "Type": "Permanent",
+          "flatNumber": 14,
+          "Area": "Maruthi Nagar",
+          "Street": "Road No: 5"
+        }
+      ],
+      "Skills": [
+        "Java",
+        "AWS",
+        "Anguler"
+      ]
+    }
+  ]
+}
