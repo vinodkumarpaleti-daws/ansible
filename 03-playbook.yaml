@@ -1,0 +1,16 @@
+- name: Install and run the package
+  hosts: web
+  become: yes # It allows the root user to run the playbook
+  tasks:
+    - name: Install Nginx
+      ansible.builtin.package:  # This package module will check the facts of the hosts and converts the package module (dnf, yum).
+        name: nginx
+        state: installed
+    - name: Start the Nginx
+      ansible.builtin.service:
+        name: nginx
+        state: started
+    - name: Enable the nginx
+      ansible.builtin.service:
+        name: nginx
+        state: enabled
