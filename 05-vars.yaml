@@ -1,0 +1,14 @@
+- name: Play & task level variables preference
+  hosts: local
+  connection: local
+  become: yes
+  vars:
+    FIRST_NAME: "Vinodkumar"
+    LAST_NAME: "Paleti"
+    DOB: "01-06-1992"
+  tasks:
+    - name: print the variables
+      vars:
+        FIRST_NAME: "Kumar"   # Here task level variables will override the playlevel variables. It will print 'Kumar' insted of 'Vinodkumar'
+      ansible.builtin.debug:
+        msg: "You Name is: {{ FIRST_NAME }} {{ LAST_NAME }}, your DOB: {{ DOB }}"
