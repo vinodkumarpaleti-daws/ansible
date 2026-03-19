@@ -1,0 +1,16 @@
+- name: prompt level variables
+  hosts: local
+  connection: local
+  become: yes
+  vars_prompt:
+  - name: username
+    prompt: Please enter your username
+    private: false # If private set to false the username will display while entering the on the CLI.
+
+  - name: password
+    prompt: Please enter your password
+    private: true
+  tasks:
+    - name: print the user details
+      ansible.builtin.debug:
+        msg: "Your username is: {{ username }} ; your password is: {{ password }}"
