@@ -5,7 +5,7 @@
   tasks:
     - name: Installing packages
       ansible.builtin.package:
-        name: 'Installing "{{ item }}"   # List of items will be looping into this items
+        name: 'Installing "{{ item }}"'  # List of items will be looping into this items
         state: installed
       loop:
         - git
