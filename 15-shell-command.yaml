@@ -4,5 +4,10 @@
   connection: local
   tasks:
     - name: check the commands in both shell and command module
-      ansible.builtin.command: cat /etc/passwd | grep root
+      # ansible.builtin.command: cat /etc/passwd | grep root   # here in command module '|' commands not work
+      ansible.builtin.shell: cat /etc/passwd | grep root
       register: rootuser_info
+
+    - name: print the root user info
+      ansible.builtin.debug:
+        msg: "Root user info {{ rootuser_info }}"
