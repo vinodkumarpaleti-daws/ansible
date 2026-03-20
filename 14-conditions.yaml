@@ -1,4 +1,4 @@
-- name: gathering facts
+- name: gathering facts   # Gathering facts will collect all the information about the linux like, OS family IPv4, memory..etc.
   hosts: local
   connection: local
   tasks:

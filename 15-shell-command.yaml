@@ -1,0 +1,8 @@
+- name: check command and shell modules in ansible playbook
+  hosts: local
+  become: yes
+  connection: local
+  tasks:
+    - name: check the commands in both shell and command module
+      ansible.builtin.command: cat /etc/passwd | grep root
+      register: rootuser_info
