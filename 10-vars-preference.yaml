@@ -11,6 +11,8 @@
     prompt: Please enter your message
     private: false
   tasks:
-    - name: "Ansible from task level"
+    - name: "Print the variable from task level"
+      vars:
+        NAME: "Ansible from Task level"
       ansible.builtin.debug:
         msg: "Hi {{ NAME }}"
