@@ -1,0 +1,12 @@
+- name: ansible loops
+  hosts: local
+  connection: local
+  become: yes
+  tasks:
+    - name: iterate the values in a loop
+      ansible.builtin.debug:
+        msg: "Hello {{ items }}"    # Here 'item' keyword is static or fixed.
+      loop:
+        - Paleti
+        - Vinod
+        - Kumar
