@@ -4,8 +4,8 @@
   become: yes
   vars:
     NAME: "Ansible from Playbook level"
-  vars_files:
-    - details.yaml
+#  vars_files:
+#    - details.yaml
   vars_prompt:
     name: NAME
     prompt: Please enter your message
@@ -20,3 +20,4 @@
 # Variables preference or precedence
 # 1. If you pass the variables as arguments on CLI, in the first preference these CLI arguments are called.
 # 2. Task level variables will be called in the next priority.
+# 3. File level variables will be called in the next priority.
