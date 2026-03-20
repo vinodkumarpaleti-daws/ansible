@@ -1,0 +1,16 @@
+- name: Check the vars preference
+  hosts: local
+  connection: local
+  become: yes
+  vars:
+    NAME: "Ansible from Playbook level"
+  vars_files:
+    - details.yaml
+  vars_prompt:
+    name: NAME
+    prompt: Please enter your message
+    private: false
+  tasks:
+    - name: "Ansible from task level"
+      ansible.builtin.debug:
+        msg: "Hi {{ NAME }}"
