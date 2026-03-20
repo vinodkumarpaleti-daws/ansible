@@ -10,4 +10,4 @@
 
     - name: print the root user info
       ansible.builtin.debug:
-        msg: "Root user info {{ rootuser_info }}"
+        msg: "{{ rootuser_info }}"
