@@ -2,8 +2,8 @@
   hosts: local
   connection: local
   become: yes
-  vars:
-    NAME: "Ansible from Playbook level"
+#  vars:
+#    NAME: "Ansible from Playbook level"
 #  vars_files:
 #    - details.yaml
 #  vars_prompt:
@@ -22,3 +22,4 @@
 # 2. Task level variables will be called in the next priority.
 # 3. File level variables will be called in the next priority.
 # 4. Prompt level variables will be called in the next priority.
+# 5. Playbook level variables will be called in the next priority.
